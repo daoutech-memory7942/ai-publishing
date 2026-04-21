@@ -1,0 +1,180 @@
+/*
+ * DDS Typography Utility Classes
+ *
+ * Naming: .[scale]-[weight]  (matches Figma style names)
+ *   -b = SemiBold (600)  ·  -m = Medium (500)  ·  -r = Regular (400)
+ *
+ * Heading scale  :  3XL · 2XL · XL · L · M · S   (B + M variants)
+ * Body scale     :  L · M · S · XS                (M + R variants, XS = M only)
+ *
+ * Token source   :  design/variables.css  →  sync-design-tokens  →  src/index.css @theme
+ * Figma          :  DDS_Foundations_v2 · node 5002:391554
+ */
+
+/* ─────────────────────────────────────────────────────────────
+   Heading — SemiBold (B)
+   ───────────────────────────────────────────────────────────── */
+
+.heading-3xl-b {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-heading-3xl);      /* 40px */
+  font-weight: var(--font-weight-b);            /* 600  */
+  line-height: var(--leading-heading-3xl);      /* 48px */
+  letter-spacing: var(--tracking-heading-3xl);  /* -0.8px */
+}
+
+.heading-2xl-b {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-heading-2xl);      /* 28px */
+  font-weight: var(--font-weight-b);
+  line-height: var(--leading-heading-2xl);      /* 42px */
+  letter-spacing: var(--tracking-heading-2xl);  /* -0.56px */
+}
+
+.heading-xl-b {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-heading-xl);       /* 24px */
+  font-weight: var(--font-weight-b);
+  line-height: var(--leading-heading-xl);       /* 36px */
+  letter-spacing: var(--tracking-heading-xl);   /* -0.48px */
+}
+
+.heading-l-b {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-heading-l);        /* 20px */
+  font-weight: var(--font-weight-b);
+  line-height: var(--leading-heading-l);        /* 30px */
+  letter-spacing: var(--tracking-heading-l);    /* -0.4px */
+}
+
+.heading-m-b {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-heading-m);        /* 18px */
+  font-weight: var(--font-weight-b);
+  line-height: var(--leading-heading-m);        /* 27px */
+  letter-spacing: var(--tracking-heading-m);    /* -0.36px */
+}
+
+.heading-s-b {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-heading-s);        /* 16px */
+  font-weight: var(--font-weight-b);
+  line-height: var(--leading-heading-s);        /* 24px */
+  letter-spacing: var(--tracking-heading-s);    /* -0.32px */
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Heading — Medium (M)
+   ───────────────────────────────────────────────────────────── */
+
+.heading-3xl-m {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-heading-3xl);
+  font-weight: var(--font-weight-m);            /* 500 */
+  line-height: var(--leading-heading-3xl);
+  letter-spacing: var(--tracking-heading-3xl);
+}
+
+.heading-2xl-m {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-heading-2xl);
+  font-weight: var(--font-weight-m);
+  line-height: var(--leading-heading-2xl);
+  letter-spacing: var(--tracking-heading-2xl);
+}
+
+.heading-xl-m {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-heading-xl);
+  font-weight: var(--font-weight-m);
+  line-height: var(--leading-heading-xl);
+  letter-spacing: var(--tracking-heading-xl);
+}
+
+.heading-l-m {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-heading-l);
+  font-weight: var(--font-weight-m);
+  line-height: var(--leading-heading-l);
+  letter-spacing: var(--tracking-heading-l);
+}
+
+.heading-m-m {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-heading-m);
+  font-weight: var(--font-weight-m);
+  line-height: var(--leading-heading-m);
+  letter-spacing: var(--tracking-heading-m);
+}
+
+.heading-s-m {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-heading-s);
+  font-weight: var(--font-weight-m);
+  line-height: var(--leading-heading-s);
+  letter-spacing: var(--tracking-heading-s);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Body — Medium (M)
+   ───────────────────────────────────────────────────────────── */
+
+.body-l-m {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-body-l);           /* 16px */
+  font-weight: var(--font-weight-m);
+  line-height: var(--leading-body-l);           /* 20px */
+  letter-spacing: var(--tracking-body-l);       /* -0.32px */
+}
+
+.body-m-m {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-body-m);           /* 14px */
+  font-weight: var(--font-weight-m);
+  line-height: var(--leading-body-m);           /* 18px */
+  letter-spacing: var(--tracking-body-m);       /* -0.28px */
+}
+
+.body-s-m {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-body-s);           /* 13px */
+  font-weight: var(--font-weight-m);
+  line-height: var(--leading-body-s);           /* 18px */
+  letter-spacing: var(--tracking-body-s);       /* -0.26px */
+}
+
+.body-xs-m {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-body-xs);          /* 12px */
+  font-weight: var(--font-weight-m);
+  line-height: var(--leading-body-xs);          /* 16.5px */
+  letter-spacing: var(--tracking-body-xs);      /* -0.24px */
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Body — Regular (R)
+   ───────────────────────────────────────────────────────────── */
+
+.body-l-r {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-body-l);
+  font-weight: var(--font-weight-r);            /* 400 */
+  line-height: var(--leading-body-l);
+  letter-spacing: var(--tracking-body-l);
+}
+
+.body-m-r {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-body-m);
+  font-weight: var(--font-weight-r);
+  line-height: var(--leading-body-m);
+  letter-spacing: var(--tracking-body-m);
+}
+
+.body-s-r {
+  font-family: 'Pretendard', sans-serif;
+  font-size: var(--font-size-body-s);
+  font-weight: var(--font-weight-r);
+  line-height: var(--leading-body-s);
+  letter-spacing: var(--tracking-body-s);
+}

@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sync-tokens": "node scripts/sync-design-tokens.mjs",
+    "sync-tokens:watch": "node scripts/sync-design-tokens.mjs --watch",
+    "sync-typo": "node scripts/sync-typography.mjs",
+    "sync-typo:watch": "node scripts/sync-typography.mjs --watch"
   },
   "dependencies": {
     "react": "^19.2.0",
