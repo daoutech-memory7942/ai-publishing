@@ -129,15 +129,11 @@ function normalise(name) {
 function toThemeKey(name, category) {
   const n = normalise(name);
   switch (category) {
-    case 'color':        return `color-${n}`;
-    case 'font':         return `font-size-${n.replace(/^font-size-/, '')}`;
-    case 'font-weight':  return `font-weight-${n.replace(/^font-weight-/, '')}`;
-    case 'leading':      return `leading-${n.replace(/^line-height-/, '')}`;
-    case 'tracking':     return `tracking-${n.replace(/^letter-spacing-/, '')}`;
-    case 'spacing':      return `spacing-${n.replace(/^space-/, '')}`;
-    case 'height':       return `height-${n.replace(/^height-/, '')}`;
-    case 'radius':       return `radius-${n.replace(/^radius-/, '')}`;
-    default:             return n;
+    case 'color':   return `color-${n}`;
+    case 'spacing': return n; // keep original name, e.g. doa-space-4xl
+    case 'height':  return n; // keep original name, e.g. doa-height-s
+    case 'radius':  return n; // keep original name, e.g. doa-radius-m
+    default:        return n;
   }
 }
 
@@ -167,9 +163,11 @@ function isTypography(name) {
 }
 
 function categorise(name) {
-  if (name.startsWith('Space-'))  return 'spacing';
-  if (name.startsWith('Height-')) return 'height';
-  if (name.startsWith('Radius-')) return 'radius';
+  const n = normalise(name);
+  // Match both --Space-4XL (:root fallback) and --doa-space-4XL (typed block)
+  if (n.startsWith('space-') || n.startsWith('doa-space-'))   return 'spacing';
+  if (n.startsWith('height-') || n.startsWith('doa-height-')) return 'height';
+  if (n.startsWith('radius-') || n.startsWith('doa-radius-')) return 'radius';
   return 'color';
 }
 
@@ -268,9 +266,9 @@ function generateThemeBlock(themeEntries) {
     ['Semantic Tokens',   pick(k => /^color-(basic|primary-bg|primary-text|primary-icon|primary-border|status|badge-text)/.test(k))],
     ['Component Tokens',  pick(k => /^color-(badge|button|controls|field|layer|menu|messenger|tag|toggle)/.test(k))],
     ['Primitive Palette', pick(k => k.startsWith('color-'))],
-    ['Spacing',           pick(k => k.startsWith('spacing-'))],
-    ['Height',            pick(k => k.startsWith('height-'))],
-    ['Radius',            pick(k => k.startsWith('radius-'))],
+    ['Spacing',           pick(k => k.startsWith('doa-space-') || k.startsWith('space-'))],
+    ['Height',            pick(k => k.startsWith('doa-height-') || k.startsWith('height-'))],
+    ['Radius',            pick(k => k.startsWith('doa-radius-') || k.startsWith('radius-'))],
   ];
 
   const parts = [];

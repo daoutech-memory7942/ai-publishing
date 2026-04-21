@@ -259,8 +259,8 @@
   --color-messenger-mention-bg-other: rgb(230, 239, 255);
   --color-messenger-bubble-bg-other: rgb(255, 255, 255);
   --color-messenger-bubble-text-mine: rgb(255, 255, 255);
-  --color-messenger-mention-text-me: rgb(200, 149, 255);
   --color-messenger-bubble-text-other: rgb(28, 28, 28);
+  --color-messenger-mention-text-me: rgb(200, 149, 255);
   --color-messenger-mention-text-other: rgb(76, 179, 255);
   --color-tag-attendance-bg-vacation: rgb(132, 195, 255);
   --color-tag-attendance-bg-work: rgb(110, 214, 136);
@@ -485,44 +485,60 @@
   --color-primary-92: rgb(5, 56, 65);
   --color-primary-95: rgb(0, 48, 57);
   --color-primary-98: rgb(0, 40, 49);
+  --color-tab-text-base: rgb(50, 51, 51);
+  --color-tab-text-active-solid: rgb(255, 255, 255);
+  --color-tab-text-active-border: rgb(28, 28, 28);
+  --color-tab-text-disabled: rgb(192, 193, 194);
+  --color-tab-icon-base: rgb(122, 123, 125);
+  --color-tab-icon-active-solid: rgb(255, 255, 255);
+  --color-tab-icon-active-border: rgb(28, 28, 28);
+  --color-tab-bg-base: rgb(255, 255, 255);
+  --color-tab-icon-disabled: rgb(192, 193, 194);
+  --color-tab-bg-base-hover: rgb(248, 248, 248);
+  --color-tab-bg-active: rgb(50, 51, 51);
+  --color-tab-bg-disabled: rgb(238, 238, 239);
+  --color-tab-border-level1: rgb(228, 229, 229);
+  --color-tab-border-level1-hover: rgb(219, 220, 220);
+  --color-tab-border-active: rgb(50, 51, 51);
+  --color-tab-border-disabled: rgb(192, 193, 194);
 
   /* Spacing */
-  --spacing-4xl: 48px;
-  --spacing-3xl: 40px;
-  --spacing-2xl: 36px;
-  --spacing-xl: 32px;
-  --spacing-l: 24px;
-  --spacing-m: 16px;
-  --spacing-s: 12px;
-  --spacing-xs: 8px;
-  --spacing-2xs: 6px;
-  --spacing-3xs: 4px;
-  --spacing-4xs: 2px;
+  --doa-space-4xl: 48px;
+  --doa-space-3xl: 40px;
+  --doa-space-2xl: 36px;
+  --doa-space-xl: 32px;
+  --doa-space-l: 24px;
+  --doa-space-m: 16px;
+  --doa-space-s: 12px;
+  --doa-space-xs: 8px;
+  --doa-space-2xs: 6px;
+  --doa-space-3xs: 4px;
+  --doa-space-4xs: 2px;
 
   /* Height */
-  --height-5xl: 56px;
-  --height-4xl: 48px;
-  --height-3xl: 40px;
-  --height-2xl: 36px;
-  --height-xl: 32px;
-  --height-l: 28px;
-  --height-m: 24px;
-  --height-s: 20px;
-  --height-xs: 16px;
-  --height-2xs: 12px;
-  --height-3xs: 8px;
-  --height-4xs: 6px;
+  --doa-height-5xl: 56px;
+  --doa-height-4xl: 48px;
+  --doa-height-3xl: 40px;
+  --doa-height-2xl: 36px;
+  --doa-height-xl: 32px;
+  --doa-height-l: 28px;
+  --doa-height-m: 24px;
+  --doa-height-s: 20px;
+  --doa-height-xs: 16px;
+  --doa-height-2xs: 12px;
+  --doa-height-3xs: 8px;
+  --doa-height-4xs: 6px;
 
   /* Radius */
-  --radius-3xl: 40px;
-  --radius-2xl: 32px;
-  --radius-xl: 24px;
-  --radius-l: 16px;
-  --radius-m: 12px;
-  --radius-s: 8px;
-  --radius-xs: 6px;
-  --radius-2xs: 4px;
-  --radius-3xs: 2px;
+  --doa-radius-3xl: 40px;
+  --doa-radius-2xl: 32px;
+  --doa-radius-xl: 24px;
+  --doa-radius-l: 16px;
+  --doa-radius-m: 12px;
+  --doa-radius-s: 8px;
+  --doa-radius-xs: 6px;
+  --doa-radius-2xs: 4px;
+  --doa-radius-3xs: 2px;
 }
 /* @theme:end */
 
@@ -615,8 +631,8 @@
   --color-messenger-mention-bg-other: rgb(34, 68, 108);
   --color-messenger-bubble-bg-other: rgb(28, 28, 28);
   --color-messenger-bubble-text-mine: rgb(255, 255, 255);
-  --color-messenger-mention-text-me: rgb(140, 91, 230);
   --color-messenger-bubble-text-other: rgb(255, 255, 255);
+  --color-messenger-mention-text-me: rgb(140, 91, 230);
   --color-messenger-mention-text-other: rgb(4, 126, 213);
   --color-tag-attendance-bg-vacation: rgb(26, 106, 175);
   --color-tag-attendance-bg-work: rgb(13, 119, 56);
@@ -757,6 +773,22 @@
   --color-status-neutral-level4: rgb(50, 51, 51);
   --color-badge-text-on-bg: rgb(255, 255, 255);
   --color-badge-text-primary: rgb(60, 190, 215);
+  --color-tab-text-base: rgb(204, 205, 206);
+  --color-tab-text-active-solid: rgb(255, 255, 255);
+  --color-tab-text-active-border: rgb(60, 190, 215);
+  --color-tab-text-disabled: rgb(150, 151, 153);
+  --color-tab-icon-base: rgb(255, 255, 255);
+  --color-tab-icon-active-solid: rgb(255, 255, 255);
+  --color-tab-icon-active-border: rgb(255, 255, 255);
+  --color-tab-bg-base: rgb(28, 28, 28);
+  --color-tab-icon-disabled: rgb(150, 151, 153);
+  --color-tab-bg-base-hover: rgb(50, 51, 51);
+  --color-tab-bg-active: rgb(8, 167, 191);
+  --color-tab-bg-disabled: rgb(66, 67, 67);
+  --color-tab-border-level1: rgb(82, 82, 83);
+  --color-tab-border-level1-hover: rgb(102, 103, 104);
+  --color-tab-border-active: rgb(8, 167, 191);
+  --color-tab-border-disabled: rgb(150, 151, 153);
 }
 /* @dark:end */
 

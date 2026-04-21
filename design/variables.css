@@ -296,38 +296,38 @@
   --Placeholder: "내용을 입력해주세요";
   --Placeholder-Search: "검색어를 입력해주세요";
   --ValueText: "인풋 박스의 여백과 글자 잘림 처리를 확인하기 위해 긴 텍스트를 입력합니다.";
-  --Space-4XL: 48px;
-  --Space-3XL: 40px;
-  --Space-2XL: 36px;
-  --Space-XL: 32px;
-  --Space-L: 24px;
-  --Space-M: 16px;
-  --Space-S: 12px;
-  --Space-XS: 8px;
-  --Space-2XS: 6px;
-  --Space-3XS: 4px;
-  --Space-4XS: 2px;
-  --Height-5XL: 56px;
-  --Height-4XL: 48px;
-  --Height-3XL: 40px;
-  --Height-2XL: 36px;
-  --Height-XL: 32px;
-  --Height-L: 28px;
-  --Height-M: 24px;
-  --Height-S: 20px;
-  --Height-XS: 16px;
-  --Height-2XS: 12px;
-  --Height-3XS: 8px;
-  --Height-4XS: 6px;
-  --Radius-3XL: 40px;
-  --Radius-2XL: 32px;
-  --Radius-XL: 24px;
-  --Radius-L: 16px;
-  --Radius-M: 12px;
-  --Radius-S: 8px;
-  --Radius-XS: 6px;
-  --Radius-2XS: 4px;
-  --Radius-3XS: 2px;
+  --doa-space-4XL: 48px;
+  --doa-space-3XL: 40px;
+  --doa-space-2XL: 36px;
+  --doa-space-XL: 32px;
+  --doa-space-L: 24px;
+  --doa-space-M: 16px;
+  --doa-space-S: 12px;
+  --doa-space-XS: 8px;
+  --doa-space-2XS: 6px;
+  --doa-space-3XS: 4px;
+  --doa-space-4XS: 2px;
+  --doa-height-5XL: 56px;
+  --doa-height-4XL: 48px;
+  --doa-height-3XL: 40px;
+  --doa-height-2XL: 36px;
+  --doa-height-XL: 32px;
+  --doa-height-L: 28px;
+  --doa-height-M: 24px;
+  --doa-height-S: 20px;
+  --doa-height-XS: 16px;
+  --doa-height-2XS: 12px;
+  --doa-height-3XS: 8px;
+  --doa-height-4XS: 6px;
+  --doa-radius-3XL: 40px;
+  --doa-radius-2XL: 32px;
+  --doa-radius-XL: 24px;
+  --doa-radius-L: 16px;
+  --doa-radius-M: 12px;
+  --doa-radius-S: 8px;
+  --doa-radius-XS: 6px;
+  --doa-radius-2XS: 4px;
+  --doa-radius-3XS: 2px;
 
   /* Fallback aliases formerly on global selector */
   --badge-bg-me: var(--black);
@@ -392,8 +392,8 @@
   --controls-icon-disabled: var(--basic-icon-disabled);
   --layer-bg-base: var(--White);
   --layer-bg-level1: var(--White);
-  --layer-dropshadow-blur: var(--Space-M);
-  --layer-dropshadow-y: var(--Space-XS);
+  --layer-dropshadow-blur: var(--doa-space-M);
+  --layer-dropshadow-y: var(--doa-space-XS);
   --menu-bg: var(--basic-bg-base);
   --menu-text: var(--basic-text-level2);
   --menu-icon: var(--basic-icon-level4);
@@ -417,8 +417,8 @@
   --messenger-mention-bg-other: var(--Blue-05);
   --messenger-bubble-bg-other: var(--basic-bg-base);
   --messenger-bubble-text-mine: var(--basic-text-on-bg);
-  --messenger-mention-text-me: var(--status-special-level1);
   --messenger-bubble-text-other: var(--basic-text-level1);
+  --messenger-mention-text-me: var(--status-special-level1);
   --messenger-mention-text-other: var(--status-information-level1);
   --tag-attendance-bg-vacation: var(--status-information-level2);
   --tag-attendance-bg-work: var(--status-positive-level2);
@@ -559,6 +559,22 @@
   --status-neutral-level4: var(--Gray-05);
   --badge-text-on-bg: var(--White);
   --badge-text-primary: var(--primary-text-level1);
+  --tab-text-base: var(--basic-text-level2);
+  --tab-text-active-solid: var(--basic-text-on-bg);
+  --tab-text-active-border: var(--basic-text-level1);
+  --tab-text-disabled: var(--basic-text-disabled);
+  --tab-icon-base: var(--basic-icon-level3);
+  --tab-icon-active-solid: var(--basic-icon-on-bg);
+  --tab-icon-active-border: var(--basic-icon-level1);
+  --tab-bg-base: var(--basic-bg-base);
+  --tab-icon-disabled: var(--basic-icon-disabled);
+  --tab-bg-base-hover: var(--basic-bg-base-hover);
+  --tab-bg-active: var(--Gray-92);
+  --tab-bg-disabled: var(--basic-bg-disabled);
+  --tab-border-level1: var(--basic-border-level7);
+  --tab-border-level1-hover: var(--basic-border-level6);
+  --tab-border-active: var(--Gray-92);
+  --tab-border-disabled: var(--basic-border-level4);
 }
 
 /* ========================================= */
@@ -964,43 +980,43 @@
 /* Collection: 📏 Size */
 [data--Size="Mode-1"],
 [data--Size="Mode-1"] * {
-  --Space-4XL: 48px;
-  --Space-3XL: 40px;
-  --Space-2XL: 36px;
-  --Space-XL: 32px;
-  --Space-L: 24px;
-  --Space-M: 16px;
-  --Space-S: 12px;
-  --Space-XS: 8px;
-  --Space-2XS: 6px;
-  --Space-3XS: 4px;
-  --Space-4XS: 2px;
-  --Height-5XL: 56px;
-  --Height-4XL: 48px;
-  --Height-3XL: 40px;
-  --Height-2XL: 36px;
-  --Height-XL: 32px;
-  --Height-L: 28px;
-  --Height-M: 24px;
-  --Height-S: 20px;
-  --Height-XS: 16px;
-  --Height-2XS: 12px;
-  --Height-3XS: 8px;
-  --Height-4XS: 6px;
+  --doa-space-4XL: 48px;
+  --doa-space-3XL: 40px;
+  --doa-space-2XL: 36px;
+  --doa-space-XL: 32px;
+  --doa-space-L: 24px;
+  --doa-space-M: 16px;
+  --doa-space-S: 12px;
+  --doa-space-XS: 8px;
+  --doa-space-2XS: 6px;
+  --doa-space-3XS: 4px;
+  --doa-space-4XS: 2px;
+  --doa-height-5XL: 56px;
+  --doa-height-4XL: 48px;
+  --doa-height-3XL: 40px;
+  --doa-height-2XL: 36px;
+  --doa-height-XL: 32px;
+  --doa-height-L: 28px;
+  --doa-height-M: 24px;
+  --doa-height-S: 20px;
+  --doa-height-XS: 16px;
+  --doa-height-2XS: 12px;
+  --doa-height-3XS: 8px;
+  --doa-height-4XS: 6px;
 }
 
 /* Collection: 📐 Radius */
 [data--Radius="Mode-1"],
 [data--Radius="Mode-1"] * {
-  --Radius-3XL: 40px;
-  --Radius-2XL: 32px;
-  --Radius-XL: 24px;
-  --Radius-L: 16px;
-  --Radius-M: 12px;
-  --Radius-S: 8px;
-  --Radius-XS: 6px;
-  --Radius-2XS: 4px;
-  --Radius-3XS: 2px;
+  --doa-radius-3XL: 40px;
+  --doa-radius-2XL: 32px;
+  --doa-radius-XL: 24px;
+  --doa-radius-L: 16px;
+  --doa-radius-M: 12px;
+  --doa-radius-S: 8px;
+  --doa-radius-XS: 6px;
+  --doa-radius-2XS: 4px;
+  --doa-radius-3XS: 2px;
 }
 
 /* ========================================= */
@@ -1072,8 +1088,8 @@
   --controls-icon-disabled: var(--basic-icon-disabled);
   --layer-bg-base: var(--White);
   --layer-bg-level1: var(--White);
-  --layer-dropshadow-blur: var(--Space-M);
-  --layer-dropshadow-y: var(--Space-XS);
+  --layer-dropshadow-blur: var(--doa-space-M);
+  --layer-dropshadow-y: var(--doa-space-XS);
   --menu-bg: var(--basic-bg-base);
   --menu-text: var(--basic-text-level2);
   --menu-icon: var(--basic-icon-level4);
@@ -1097,8 +1113,8 @@
   --messenger-mention-bg-other: var(--Blue-05);
   --messenger-bubble-bg-other: var(--basic-bg-base);
   --messenger-bubble-text-mine: var(--basic-text-on-bg);
-  --messenger-mention-text-me: var(--status-special-level1);
   --messenger-bubble-text-other: var(--basic-text-level1);
+  --messenger-mention-text-me: var(--status-special-level1);
   --messenger-mention-text-other: var(--status-information-level1);
   --tag-attendance-bg-vacation: var(--status-information-level2);
   --tag-attendance-bg-work: var(--status-positive-level2);
@@ -1239,6 +1255,22 @@
   --status-neutral-level4: var(--Gray-05);
   --badge-text-on-bg: var(--White);
   --badge-text-primary: var(--primary-text-level1);
+  --tab-text-base: var(--basic-text-level2);
+  --tab-text-active-solid: var(--basic-text-on-bg);
+  --tab-text-active-border: var(--basic-text-level1);
+  --tab-text-disabled: var(--basic-text-disabled);
+  --tab-icon-base: var(--basic-icon-level3);
+  --tab-icon-active-solid: var(--basic-icon-on-bg);
+  --tab-icon-active-border: var(--basic-icon-level1);
+  --tab-bg-base: var(--basic-bg-base);
+  --tab-icon-disabled: var(--basic-icon-disabled);
+  --tab-bg-base-hover: var(--basic-bg-base-hover);
+  --tab-bg-active: var(--Gray-92);
+  --tab-bg-disabled: var(--basic-bg-disabled);
+  --tab-border-level1: var(--basic-border-level7);
+  --tab-border-level1-hover: var(--basic-border-level6);
+  --tab-border-active: var(--Gray-92);
+  --tab-border-disabled: var(--basic-border-level4);
 }
 
 [data--Color="Dark"],
@@ -1305,8 +1337,8 @@
   --controls-icon-disabled: var(--basic-icon-disabled);
   --layer-bg-base: var(--Gray-92);
   --layer-bg-level1: var(--Gray-86);
-  --layer-dropshadow-blur: var(--Space-M);
-  --layer-dropshadow-y: var(--Space-XS);
+  --layer-dropshadow-blur: var(--doa-space-M);
+  --layer-dropshadow-y: var(--doa-space-XS);
   --menu-bg: var(--basic-bg-base);
   --menu-text: var(--basic-text-level2);
   --menu-icon: var(--basic-icon-level2);
@@ -1330,8 +1362,8 @@
   --messenger-mention-bg-other: var(--Blue-86);
   --messenger-bubble-bg-other: var(--basic-bg-base);
   --messenger-bubble-text-mine: var(--basic-text-on-bg);
-  --messenger-mention-text-me: var(--status-special-level1);
   --messenger-bubble-text-other: var(--basic-text-level1);
+  --messenger-mention-text-me: var(--status-special-level1);
   --messenger-mention-text-other: var(--status-information-level1);
   --tag-attendance-bg-vacation: var(--status-information-level2);
   --tag-attendance-bg-work: var(--status-positive-level2);
@@ -1472,6 +1504,22 @@
   --status-neutral-level4: var(--Gray-92);
   --badge-text-on-bg: var(--White);
   --badge-text-primary: var(--primary-text-level1);
+  --tab-text-base: var(--basic-text-level2);
+  --tab-text-active-solid: var(--basic-text-on-bg);
+  --tab-text-active-border: var(--primary-text-level1);
+  --tab-text-disabled: var(--basic-text-disabled);
+  --tab-icon-base: var(--basic-icon-level1);
+  --tab-icon-active-solid: var(--basic-icon-on-bg);
+  --tab-icon-active-border: var(--basic-icon-level1);
+  --tab-bg-base: var(--basic-bg-base);
+  --tab-icon-disabled: var(--basic-icon-disabled);
+  --tab-bg-base-hover: var(--basic-bg-base-hover);
+  --tab-bg-active: var(--primary-bg-level1);
+  --tab-bg-disabled: var(--basic-bg-disabled);
+  --tab-border-level1: var(--basic-border-level7);
+  --tab-border-level1-hover: var(--basic-border-level6);
+  --tab-border-active: var(--primary-bg-level1);
+  --tab-border-disabled: var(--basic-border-level4);
 }
 
 /* ========================================= */
