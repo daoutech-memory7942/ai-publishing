@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables (sensitive)
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+
+# Claude Code local settings (contains secrets)
+.claude/settings.local.json
+
+# Editor
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
