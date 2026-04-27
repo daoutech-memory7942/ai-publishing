@@ -1,8 +1,10 @@
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import FoundationPage from './pages/FoundationPage'
 
-function App() {
+function Home() {
   const [count, setCount] = useState(0)
 
   return (
@@ -16,11 +18,11 @@ function App() {
             <img src={reactLogo} className="h-24 w-24 hover:drop-shadow-lg transition-all animate-spin-slow" alt="React logo" />
           </a>
         </div>
-        
+
         <h1 className="text-5xl font-bold text-gray-800 mb-8">
           Vite + React + Tailwind CSS
         </h1>
-        
+
         <div className="bg-white rounded-lg shadow-xl p-8 mb-6">
           <button
             onClick={() => setCount((count) => count + 1)}
@@ -32,13 +34,25 @@ function App() {
             Edit <code className="bg-gray-100 px-2 py-1 rounded text-sm">src/App.tsx</code> and save to test HMR
           </p>
         </div>
-        
-        <p className="text-gray-500 text-sm">
-          Click on the Vite and React logos to learn more
-        </p>
+
+        <Link
+          to="/foundation"
+          className="inline-block mt-2 text-sm text-indigo-600 hover:underline"
+        >
+          → Color Foundation 보기
+        </Link>
       </div>
     </div>
   )
 }
 
-export default App
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/foundation" element={<FoundationPage />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
