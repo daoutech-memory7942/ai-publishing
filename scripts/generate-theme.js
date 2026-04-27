@@ -17,14 +17,21 @@ if (!rootMatch) {
 }
 const rootBlock = rootMatch[1];
 
-// var() 참조 변수만 파싱
+// var() 참조 변수 + tag-custom- 직접값 파싱
 const varLineRe = /^\s*(--[\w-]+)\s*:\s*(var\(--[\w-]+\))\s*;/;
+const rawLineRe = /^\s*(--[\w-]+)\s*:\s*(.+?)\s*;/;
 
 const entries = [];
 for (const line of rootBlock.split('\n')) {
-  const m = line.match(varLineRe);
-  if (!m) continue;
-  entries.push({ name: m[1], value: m[2] });
+  const varMatch = line.match(varLineRe);
+  if (varMatch) {
+    entries.push({ name: varMatch[1], value: varMatch[2], raw: false });
+    continue;
+  }
+  const rawMatch = line.match(rawLineRe);
+  if (rawMatch && rawMatch[1].startsWith('--tag-custom-')) {
+    entries.push({ name: rawMatch[1], value: rawMatch[2], raw: true });
+  }
 }
 
 // 네임스페이스 결정 (항상 --color-)
@@ -50,10 +57,11 @@ for (const entry of entries) {
 const lines = ['@theme {'];
 for (const [cat, vars] of groups) {
   lines.push(`  /* ${cat} */`);
-  for (const { name, value } of vars) {
+  for (const { name, value, raw } of vars) {
     const ns = getNamespace();
     const themeVar = `${ns}${name.replace(/^--/, '')}`;
-    lines.push(`  ${themeVar}: var(${name});`);
+    const themeValue = raw ? value : `var(${name})`;
+    lines.push(`  ${themeVar}: ${themeValue};`);
   }
   lines.push('');
 }
