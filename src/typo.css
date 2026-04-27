@@ -1,0 +1,137 @@
+@layer components {
+  /* Heading */
+  .typo-heading-2xl-b {
+    font-size: var(--font-size-Heading-2XL);
+    line-height: var(--line-height-Heading-2XL);
+    letter-spacing: var(--letter-spacing-Heading-2XL);
+    font-weight: 600;
+  }
+  .typo-heading-2xl-m {
+    font-size: var(--font-size-Heading-2XL);
+    line-height: var(--line-height-Heading-2XL);
+    letter-spacing: var(--letter-spacing-Heading-2XL);
+    font-weight: 500;
+  }
+  .typo-heading-3xl-b {
+    font-size: var(--font-size-Heading-3XL);
+    line-height: var(--line-height-Heading-3XL);
+    letter-spacing: var(--letter-spacing-Heading-3XL);
+    font-weight: 600;
+  }
+  .typo-heading-3xl-m {
+    font-size: var(--font-size-Heading-3XL);
+    line-height: var(--line-height-Heading-3XL);
+    letter-spacing: var(--letter-spacing-Heading-3XL);
+    font-weight: 500;
+  }
+  .typo-heading-l-b {
+    font-size: var(--font-size-Heading-L);
+    line-height: var(--line-height-Heading-L);
+    letter-spacing: var(--letter-spacing-Heading-L);
+    font-weight: 600;
+  }
+  .typo-heading-l-m {
+    font-size: var(--font-size-Heading-L);
+    line-height: var(--line-height-Heading-L);
+    letter-spacing: var(--letter-spacing-Heading-L);
+    font-weight: 500;
+  }
+  .typo-heading-m-b {
+    font-size: var(--font-size-Heading-M);
+    line-height: var(--line-height-Heading-M);
+    letter-spacing: var(--letter-spacing-Heading-M);
+    font-weight: 600;
+  }
+  .typo-heading-m-m {
+    font-size: var(--font-size-Heading-M);
+    line-height: var(--line-height-Heading-M);
+    letter-spacing: var(--letter-spacing-Heading-M);
+    font-weight: 500;
+  }
+  .typo-heading-s-b {
+    font-size: var(--font-size-Heading-S);
+    line-height: var(--line-height-Heading-S);
+    letter-spacing: var(--letter-spacing-Heading-S);
+    font-weight: 600;
+  }
+  .typo-heading-s-m {
+    font-size: var(--font-size-Heading-S);
+    line-height: var(--line-height-Heading-S);
+    letter-spacing: var(--letter-spacing-Heading-S);
+    font-weight: 500;
+  }
+  .typo-heading-xl-b {
+    font-size: var(--font-size-Heading-XL);
+    line-height: var(--line-height-Heading-XL);
+    letter-spacing: var(--letter-spacing-Heading-XL);
+    font-weight: 600;
+  }
+  .typo-heading-xl-m {
+    font-size: var(--font-size-Heading-XL);
+    line-height: var(--line-height-Heading-XL);
+    letter-spacing: var(--letter-spacing-Heading-XL);
+    font-weight: 500;
+  }
+
+  /* Body */
+  .typo-body-2xs-r {
+    font-size: var(--font-size-Body-2XS);
+    line-height: var(--line-height-Body-2XS);
+    letter-spacing: var(--letter-spacing-Body-2XS);
+    font-weight: 400;
+  }
+  .typo-body-l-m {
+    font-size: var(--font-size-Body-L);
+    line-height: var(--line-height-Body-L);
+    letter-spacing: var(--letter-spacing-Body-L);
+    font-weight: 500;
+  }
+  .typo-body-l-r {
+    font-size: var(--font-size-Body-L);
+    line-height: var(--line-height-Body-L);
+    letter-spacing: var(--letter-spacing-Body-L);
+    font-weight: 400;
+  }
+  .typo-body-m-b {
+    font-size: var(--font-size-Body-M);
+    line-height: var(--line-height-Body-M);
+    letter-spacing: var(--letter-spacing-Body-M);
+    font-weight: 600;
+  }
+  .typo-body-m-m {
+    font-size: var(--font-size-Body-M);
+    line-height: var(--line-height-Body-M);
+    letter-spacing: var(--letter-spacing-Body-M);
+    font-weight: 500;
+  }
+  .typo-body-m-r {
+    font-size: var(--font-size-Body-M);
+    line-height: var(--line-height-Body-M);
+    letter-spacing: var(--letter-spacing-Body-M);
+    font-weight: 400;
+  }
+  .typo-body-s-m {
+    font-size: var(--font-size-Body-S);
+    line-height: var(--line-height-Body-S);
+    letter-spacing: var(--letter-spacing-Body-S);
+    font-weight: 500;
+  }
+  .typo-body-s-r {
+    font-size: var(--font-size-Body-S);
+    line-height: var(--line-height-Body-S);
+    letter-spacing: var(--letter-spacing-Body-S);
+    font-weight: 400;
+  }
+  .typo-body-xs-m {
+    font-size: var(--font-size-Body-XS);
+    line-height: var(--line-height-Body-XS);
+    letter-spacing: var(--letter-spacing-Body-XS);
+    font-weight: 500;
+  }
+  .typo-body-xs-r {
+    font-size: var(--font-size-Body-XS);
+    line-height: var(--line-height-Body-M);
+    letter-spacing: var(--letter-spacing-Body-XS);
+    font-weight: 400;
+  }
+}
