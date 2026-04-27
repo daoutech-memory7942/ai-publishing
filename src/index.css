@@ -1,4 +1,4 @@
 @import "tailwindcss";
-@import "./variables.css";
-@import "./theme.css";
-@import "./typo.css";
+@import "./variables.css"; /* Figma Plugin 변수 원본값 */
+@import "./theme.css"; /* variables tailwind 유틸리티 클래스 변환 */
+@import "./typo.css"; /* typography tailwind 유틸리티 클래스 변환 */
