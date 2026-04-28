@@ -124,7 +124,7 @@
   }
   .typo-body-xs-m {
     font-size: var(--font-size-Body-XS);
-    line-height: var(--line-height-Body-XS);
+    line-height: var(--line-height-Body-M);
     letter-spacing: var(--letter-spacing-Body-XS);
     font-weight: 500;
   }

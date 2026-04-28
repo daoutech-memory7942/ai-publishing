@@ -57,6 +57,23 @@ className="bg-[var(--basic/bg/level2)] text-[var(--basic/text/level1)]"
 className="bg-[#f8f8f8] text-[#1c1c1c]"
 ```
 
+### 텍스트 컬러 클래스 규칙 (Tailwind v4)
+
+`text-(--var)` shorthand는 Tailwind v4에서 `color` / `font-size` 중 어느 property인지 모호할 때 CSS를 생성하지 않아 텍스트가 검은색으로 출력된다.
+
+- `bg-(--var)`, `border-(--var)` — 타입이 하나라 shorthand 사용 가능
+- `text-(--var)` — **컬러 용도로 사용 금지**
+
+텍스트 컬러는 `theme.css`의 `@theme`에 `--color-*` 형태로 등록된 토큰명을 직접 사용한다.
+
+```tsx
+// ❌ 동작 안 함 (타입 모호, CSS 미생성)
+className="text-(--button-text-level1)"
+
+// ✅ @theme 등록 토큰명 사용 (--color- 접두사를 제거한 이름)
+className="text-button-text-level1"
+```
+
 ### clsx로 조건부 클래스 처리
 
 ```tsx
@@ -225,8 +242,9 @@ figma.connect(ComponentName, 'https://www.figma.com/design/CneiAuBjY768PnyW0OkmI
 Figma URL이 주어졌을 때 아래 순서로 분석한다.
 
 1. **`get_metadata`** — variants 전체 목록 파악 (variant property 이름·값 확인)
-2. **`get_design_context`** — 대표 variant(들) 코드·토큰 추출
+2. **`get_design_context`** — `disableCodeConnect: true` 옵션 필수 사용 (실제 CSS 토큰 확인용)
    - styleType별로 색상 토큰이 다를 경우 각각 fetch
+   - **같은 styleType이라도 level에 따라 텍스트 토큰이 달라질 수 있으므로 styleType × level 조합별로 텍스트/배경/테두리 토큰을 각각 확인**
    - size별 스펙(height, font, icon size) 확인
 3. **분석 결과 정리**
    - Props 인터페이스 도출
