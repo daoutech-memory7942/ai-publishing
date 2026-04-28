@@ -131,6 +131,40 @@
   --color-tag-system-bg-special: var(--tag-system-bg-special);
   --color-tag-system-bg-special-level2: var(--tag-system-bg-special-level2);
 
+  /* doa */
+  --spacing-doa-space-4xl: 48px;
+  --spacing-doa-space-3xl: 40px;
+  --spacing-doa-space-2xl: 36px;
+  --spacing-doa-space-xl: 32px;
+  --spacing-doa-space-l: 24px;
+  --spacing-doa-space-m: 16px;
+  --spacing-doa-space-s: 12px;
+  --spacing-doa-space-xs: 8px;
+  --spacing-doa-space-2xs: 6px;
+  --spacing-doa-space-3xs: 4px;
+  --spacing-doa-space-4xs: 2px;
+  --spacing-doa-height-5xl: 56px;
+  --spacing-doa-height-4xl: 48px;
+  --spacing-doa-height-3xl: 40px;
+  --spacing-doa-height-2xl: 36px;
+  --spacing-doa-height-xl: 32px;
+  --spacing-doa-height-l: 28px;
+  --spacing-doa-height-m: 24px;
+  --spacing-doa-height-s: 20px;
+  --spacing-doa-height-xs: 16px;
+  --spacing-doa-height-2xs: 12px;
+  --spacing-doa-height-3xs: 8px;
+  --spacing-doa-height-4xs: 6px;
+  --radius-doa-radius-3xl: 40px;
+  --radius-doa-radius-2xl: 32px;
+  --radius-doa-radius-xl: 24px;
+  --radius-doa-radius-l: 16px;
+  --radius-doa-radius-m: 12px;
+  --radius-doa-radius-s: 8px;
+  --radius-doa-radius-xs: 6px;
+  --radius-doa-radius-2xs: 4px;
+  --radius-doa-radius-3xs: 2px;
+
   /* badge */
   --color-badge-bg-me: var(--badge-bg-me);
   --color-badge-bg-primary: var(--badge-bg-primary);
