@@ -74,6 +74,39 @@ className="text-(--button-text-level1)"
 className="text-button-text-level1"
 ```
 
+### 타이포그래피는 `typo-*` 컴포넌트 클래스 사용
+
+`font-size` / `font-weight` / `letter-spacing` / `line-height`를 개별 Tailwind 임의값으로 분산하지 않는다. `src/typo.css`의 `@layer components`에 정의된 `typo-*` 단일 클래스로 처리한다.
+
+```tsx
+// ❌ 개별 임의값 — 4개 속성 분산
+className="text-[14px] font-medium tracking-[-0.28px] leading-4.5"
+
+// ✅ typo-* 클래스 — 1개로 통합
+className="typo-body-m-m"
+```
+
+**Figma → typo 클래스 변환 규칙**
+
+`get_design_context` 응답의 `"These styles are contained in the design:"` 줄에서 `{Category}/{Size}/{Weight}` 형태 스타일명을 확인한 뒤 아래 표로 변환한다.
+
+| Figma 스타일 | typo 클래스 | Figma 스타일 | typo 클래스 |
+|---|---|---|---|
+| Heading/3XL/B | `typo-heading-3xl-b` | Body/L/M | `typo-body-l-m` |
+| Heading/3XL/M | `typo-heading-3xl-m` | Body/L/R | `typo-body-l-r` |
+| Heading/2XL/B | `typo-heading-2xl-b` | Body/M/B | `typo-body-m-b` |
+| Heading/2XL/M | `typo-heading-2xl-m` | Body/M/M | `typo-body-m-m` |
+| Heading/XL/B | `typo-heading-xl-b` | Body/M/R | `typo-body-m-r` |
+| Heading/XL/M | `typo-heading-xl-m` | Body/S/M | `typo-body-s-m` |
+| Heading/L/B | `typo-heading-l-b` | Body/S/R | `typo-body-s-r` |
+| Heading/L/M | `typo-heading-l-m` | Body/XS/M | `typo-body-xs-m` |
+| Heading/M/B | `typo-heading-m-b` | Body/XS/R | `typo-body-xs-r` |
+| Heading/M/M | `typo-heading-m-m` | Body/2XS/R | `typo-body-2xs-r` |
+| Heading/S/B | `typo-heading-s-b` | | |
+| Heading/S/M | `typo-heading-s-m` | | |
+
+> 변환된 클래스가 `typo.css`에 없으면 구현 전에 사용자에게 알리고 추가 여부를 결정한다.
+
 ### clsx로 조건부 클래스 처리
 
 ```tsx
