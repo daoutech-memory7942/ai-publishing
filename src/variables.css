@@ -355,7 +355,7 @@
   --button-bg-level2: var(--primary-bg-level3);
   --button-bg-level2-hover: var(--primary-bg-level3-hover);
   --button-bg-negative: var(--Red-52);
-  --button-bg-negative-hovrer: var(--Red-64);
+  --button-bg-negative-hover: var(--Red-64);
   --button-bg-disabled: var(--basic-bg-disabled);
   --button-bg-floating-base: var(--basic-bg-base);
   --button-bg-floating-base-hover: var(--basic-bg-base-hover);
@@ -418,8 +418,8 @@
   --messenger-text-on-dark: var(--Gray-03);
   --messenger-text-on-light: var(--Gray-98);
   --messenger-mention-bg-me: var(--Purple-05);
-  --messenger-mention-bg-other: var(--Blue-05);
   --messenger-bubble-bg-mine: var(--primary-bg-level1);
+  --messenger-mention-bg-other: var(--Blue-05);
   --messenger-bubble-bg-other: var(--basic-bg-base);
   --messenger-bubble-text-mine: var(--basic-text-on-bg);
   --messenger-bubble-text-other: var(--basic-text-level1);
@@ -1057,7 +1057,7 @@
   --button-bg-level2: var(--primary-bg-level3);
   --button-bg-level2-hover: var(--primary-bg-level3-hover);
   --button-bg-negative: var(--Red-52);
-  --button-bg-negative-hovrer: var(--Red-64);
+  --button-bg-negative-hover: var(--Red-64);
   --button-bg-disabled: var(--basic-bg-disabled);
   --button-bg-floating-base: var(--basic-bg-base);
   --button-bg-floating-base-hover: var(--basic-bg-base-hover);
@@ -1120,8 +1120,8 @@
   --messenger-text-on-dark: var(--Gray-03);
   --messenger-text-on-light: var(--Gray-98);
   --messenger-mention-bg-me: var(--Purple-05);
-  --messenger-mention-bg-other: var(--Blue-05);
   --messenger-bubble-bg-mine: var(--primary-bg-level1);
+  --messenger-mention-bg-other: var(--Blue-05);
   --messenger-bubble-bg-other: var(--basic-bg-base);
   --messenger-bubble-text-mine: var(--basic-text-on-bg);
   --messenger-bubble-text-other: var(--basic-text-level1);
@@ -1311,7 +1311,7 @@
   --button-bg-level2: var(--primary-bg-level3);
   --button-bg-level2-hover: var(--primary-bg-level3-hover);
   --button-bg-negative: var(--Red-64);
-  --button-bg-negative-hovrer: var(--Red-52);
+  --button-bg-negative-hover: var(--Red-52);
   --button-bg-disabled: var(--basic-bg-disabled);
   --button-bg-floating-base: var(--Gray-86);
   --button-bg-floating-base-hover: var(--Gray-80);
@@ -1374,8 +1374,8 @@
   --messenger-text-on-dark: var(--Gray-03);
   --messenger-text-on-light: var(--Gray-98);
   --messenger-mention-bg-me: var(--Purple-86);
-  --messenger-mention-bg-other: var(--Blue-86);
   --messenger-bubble-bg-mine: var(--primary-bg-level1);
+  --messenger-mention-bg-other: var(--Blue-86);
   --messenger-bubble-bg-other: var(--basic-bg-base);
   --messenger-bubble-text-mine: var(--basic-text-on-bg);
   --messenger-bubble-text-other: var(--basic-text-level1);

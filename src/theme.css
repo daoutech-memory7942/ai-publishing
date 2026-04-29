@@ -194,7 +194,7 @@
   --color-button-bg-level2: var(--button-bg-level2);
   --color-button-bg-level2-hover: var(--button-bg-level2-hover);
   --color-button-bg-negative: var(--button-bg-negative);
-  --color-button-bg-negative-hovrer: var(--button-bg-negative-hovrer);
+  --color-button-bg-negative-hover: var(--button-bg-negative-hover);
   --color-button-bg-disabled: var(--button-bg-disabled);
   --color-button-bg-floating-base: var(--button-bg-floating-base);
   --color-button-bg-floating-base-hover: var(--button-bg-floating-base-hover);
@@ -267,8 +267,8 @@
   --color-messenger-text-on-dark: var(--messenger-text-on-dark);
   --color-messenger-text-on-light: var(--messenger-text-on-light);
   --color-messenger-mention-bg-me: var(--messenger-mention-bg-me);
-  --color-messenger-mention-bg-other: var(--messenger-mention-bg-other);
   --color-messenger-bubble-bg-mine: var(--messenger-bubble-bg-mine);
+  --color-messenger-mention-bg-other: var(--messenger-mention-bg-other);
   --color-messenger-bubble-bg-other: var(--messenger-bubble-bg-other);
   --color-messenger-bubble-text-mine: var(--messenger-bubble-text-mine);
   --color-messenger-bubble-text-other: var(--messenger-bubble-text-other);
