@@ -155,6 +155,38 @@ export const AllVariants: Story = {
 };
 ```
 
+4. **ReactNode를 args에 넣지 않는다**
+
+Storybook은 `args`를 JSON으로 직렬화한다. `leftIcon: <IconSearch />` 같은 ReactNode를 `args`에 포함하면 직렬화에 실패하면서 **해당 story의 args 전체가 깨진다** — `count`, `hasCount` 등 다른 props까지 컴포넌트에 전달되지 않는다.
+
+**ReactNode prop이 있는 story는 반드시 `render` 함수를 사용한다.**
+
+```tsx
+// ❌ args에 ReactNode 포함 — 다른 args까지 깨짐
+export const WithIcon: Story = {
+  args: {
+    label: 'Button',
+    hasIconLeft: true,
+    leftIcon: <IconSearch size={16} />,  // ← JSON 직렬화 불가
+    count: '3',
+    hasCount: true,  // ← leftIcon 때문에 이것도 전달 안 됨
+  },
+};
+
+// ✅ render 함수로 ReactNode 분리 — args는 직렬화 가능한 값만
+export const WithIcon: Story = {
+  render: (args) => <ComponentName {...args} leftIcon={<IconSearch size={16} />} />,
+  args: {
+    label: 'Button',
+    hasIconLeft: true,
+    count: '3',
+    hasCount: true,
+  },
+};
+```
+
+**적용 기준**: `leftIcon`, `rightIcon`, `leadingSlot`, `actionSlot` 등 `ReactNode` 타입 prop에 실제 JSX를 전달하는 story는 모두 `render` 함수 방식을 사용한다.
+
 ---
 
 ## 구현 체크리스트
@@ -171,3 +203,4 @@ export const AllVariants: Story = {
 - [ ] 기존 내부 컴포넌트 재사용 — CheckBox는 `@dop-ui/react/shared/ui/check-box`, 아이콘은 `@tabler/icons-react`
 - [ ] Code Connect — Figma nodeId 정확히 기입, props 매핑 완성
 - [ ] Storybook — `Default`, styleType별, size별, `Disabled`, `AllVariants` Story 완성
+- [ ] Storybook ReactNode args 금지 — `leftIcon`, `rightIcon`, slot 등 ReactNode를 args에 직접 넣지 않음. 해당 story는 `render: (args) => <Component {...args} leftIcon={<Icon />} />` 패턴으로 작성
