@@ -206,6 +206,27 @@ boolean flag prop 대신, prop 자체의 존재 여부로 표시를 제어한다
 {hasLeading && <div className="...">{leadingSlot}</div>}
 ```
 
+### count prop — 괄호는 컴포넌트가 래핑
+
+`count` prop은 숫자/문자열 값만 받고, 괄호는 컴포넌트 내부에서 렌더링 시 추가한다.
+
+```tsx
+// Props 타입
+interface Props {
+  count?: string;  // 값만 전달: "3", "99+"
+}
+
+// 렌더링
+<span>({count})</span>  // → "(3)", "(99+)"
+
+// 사용 예
+<ButtonBasic count="3" hasCount />   // 렌더: (3)
+<ButtonBasic count="99+" hasCount /> // 렌더: (99+)
+```
+
+**Figma에서 count 기본값이 `"(0)"` 형태로 보이더라도 괄호를 값에 포함하지 않는다.**  
+괄호는 항상 컴포넌트가 추가하므로 `count="0"`으로 전달한다.
+
 ### Variants는 enum 타입으로
 
 ```tsx
